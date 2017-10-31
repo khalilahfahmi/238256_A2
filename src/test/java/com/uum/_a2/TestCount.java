@@ -20,7 +20,7 @@ import org.junit.Test;
 
 
 public class TestCount {
-   @Test 
+ @Test   
     public int countLine(){
         int linenumber = 0;
         int blankline = 0;
@@ -69,7 +69,7 @@ public class TestCount {
         return actualLOC;
         
     }
-    @Test
+    
     public static int countKeywords(File file) throws Exception {
 		
 		String[] keywordString = {"abstract", "assert", "boolean",
@@ -102,7 +102,7 @@ public class TestCount {
 
 		return totalkeyword;
     }
-    @Test
+    
     public int countTotalValue(int actualLOC, int totalkeyword) {
         int totalValue;
         totalValue = actualLOC + totalkeyword;

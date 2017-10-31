@@ -13,15 +13,16 @@ import java.io.File;
 import java.io.FileNotFoundException;
 import java.io.FileReader;
 import java.io.IOException;
+import org.junit.Test;
 
-public class ProcessFile extends Count{
+public class TestProcessFile extends Count{
     
     String st;
-
+@Test
     public void ProcessFile(String path) throws FileNotFoundException, IOException {
         process(path);
     }
-
+@Test
     public void process(String path) throws FileNotFoundException, IOException {
         String p = path;
         File f = new File(path);
